@@ -14,6 +14,7 @@ import { gui } from '@/store/gui'
 import { farm } from '@/store/farm'
 import { editor } from '@/store/editor'
 import { gcodeviewer } from '@/store/gcodeviewer'
+import { calibration } from '@/store/calibration'
 
 Vue.use(Vuex)
 
@@ -40,6 +41,7 @@ export default new Vuex.Store({
         farm,
         editor,
         gcodeviewer,
+        calibration,
     },
     getters: getters,
     mutations: mutations,
