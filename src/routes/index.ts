@@ -6,6 +6,7 @@ import Files from '../pages/Files.vue'
 import History from '../pages/History.vue'
 import Timelapse from '../pages/Timelapse.vue'
 import Machine from '../pages/Machine.vue'
+import { mdiWrenchClock } from '@mdi/js'
 import { AsyncComponent, Component } from 'vue'
 
 import {
@@ -126,6 +127,17 @@ const routes: AppRoute[] = [
         alwaysShow: true,
         showInNavi: true,
         position: 90,
+    },
+    {
+        name: 'calibration',
+        title: 'Calibration',
+        path: '/calibration',
+        icon: mdiWrenchClock,
+        component: () => import('../pages/Calibration.vue'),
+        alwaysShow: true,
+        showInNavi: true,
+        klipperIsConnected: true,
+        position: 95,
     },
     {
         title: null,

@@ -151,6 +151,9 @@
         "Save": "Save",
         "Yes": "Yes"
     },
+    "Calibration": {
+        "Title": "Calibration"
+    },
     "CancelJobDialog": {
         "AreYouSure": "Are you sure?",
         "CancelJob": "Cancel Job"
@@ -1104,6 +1107,7 @@
         "TurnDeviceOn": "Turn {device} on"
     },
     "Router": {
+        "Calibration": "Calibration",
         "Console": "Console",
         "Dashboard": "Dashboard",
         "G-Code Files": "G-Code Files",
