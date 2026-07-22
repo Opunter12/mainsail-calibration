@@ -152,6 +152,13 @@
         "Yes": "Yes"
     },
     "Calibration": {
+        "Pid": {
+            "BedTitle": "Bed PID Autotune",
+            "HotendTitle": "Hotend PID Autotune",
+            "Result": "Kp: {kp}  Ki: {ki}  Kd: {kd}",
+            "Start": "Start PID Tune",
+            "TargetTemp": "Target Temperature"
+        },
         "Title": "Calibration"
     },
     "CancelJobDialog": {

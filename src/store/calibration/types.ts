@@ -17,3 +17,11 @@ export interface CalibrationState {
     pidHotend: PidStepState
     pidBed: PidStepState
 }
+
+export interface PidStepState {
+    status: CalibrationStepStatus
+    targetTemp: number
+    result: PidResult | null
+    errorMessage: string | null
+    startedAt: number | null   // epoch ms, not a Date — plain primitives store/serialize more predictably
+}

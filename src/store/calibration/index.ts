@@ -7,8 +7,8 @@ import { RootState } from '@/store/types'
 
 export const getDefaultState = (): CalibrationState => {
     return {
-        pidHotend: { status: 'idle', targetTemp: 210, result: null, errorMessage: null },
-        pidBed: { status: 'idle', targetTemp: 60, result: null, errorMessage: null },
+        pidHotend: { status: 'idle', targetTemp: 210, result: null, errorMessage: null, startedAt: null },
+        pidBed: { status: 'idle', targetTemp: 60, result: null, errorMessage: null, startedAt: null },
     }
 }
 

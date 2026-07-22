@@ -2,9 +2,13 @@ import { MutationTree } from 'vuex'
 import { CalibrationState, PidResult } from '@/store/calibration/types'
 
 export const mutations: MutationTree<CalibrationState> = {
-    setPidStatus(state, payload: { heater: 'pidHotend' | 'pidBed'; status: CalibrationState['pidHotend']['status'] }) {
-        state[payload.heater].status = payload.status
-    },
+    setPidStatus(
+    state,
+    payload: { heater: 'pidHotend' | 'pidBed'; status: CalibrationState['pidHotend']['status']; startedAt?: number | null })
+    {
+    state[payload.heater].status = payload.status
+    if (payload.startedAt !== undefined) state[payload.heater].startedAt = payload.startedAt
+},
     setPidTargetTemp(state, payload: { heater: 'pidHotend' | 'pidBed'; targetTemp: number }) {
         state[payload.heater].targetTemp = payload.targetTemp
     },
