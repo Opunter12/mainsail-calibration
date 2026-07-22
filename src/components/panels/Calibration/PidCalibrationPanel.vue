@@ -17,7 +17,7 @@
                         :disabled="isRunning" />
                 </v-col>
                 <v-col cols="12" sm="4">
-                    <v-btn color="primary" :loading="isRunning" :disabled="isRunning" @click="startCalibration">
+                    <v-btn color="primary" :loading="isRunning" :disabled="isRunning || otherRunning" @click="startCalibration">
                         <v-icon left>{{ mdiPlay }}</v-icon>
                         {{ $t('Calibration.Pid.Start') }}
                     </v-btn>
@@ -67,6 +67,7 @@ export default class PidCalibrationPanel extends Mixins(BaseMixin) {
 
     @Prop({ type: String, required: true }) readonly heater!: 'extruder' | 'heater_bed'
     @Prop({ type: String, required: true }) readonly title!: string
+    @Prop({ type: Boolean, default: false }) readonly otherRunning!: boolean
 
     get storeKey(): 'pidHotend' | 'pidBed' {
         return this.heater === 'extruder' ? 'pidHotend' : 'pidBed'
