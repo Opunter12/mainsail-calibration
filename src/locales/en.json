@@ -152,6 +152,27 @@
         "Yes": "Yes"
     },
     "Calibration": {
+        "ESteps": {
+            "ApplyAndSave": "Apply & Save to Config",
+            "Calculate": "Calculate",
+            "ConfirmMarked": "I've Marked the Filament",
+            "Description": "This calibrates how far your extruder moves filament versus what's requested. You'll heat the hotend, mark the filament with a pen, extrude a measured amount, then submit how far the mark actually moved. The change will be calculated and saved automatically.",
+            "Extruding": "Extruding filament: please wait, do not measure yet.",
+            "FeedRate": "Feed Rate",
+            "FinalMarkDistance": "New Mark-to-Intake Distance",
+            "Heating": "Heating to {temp}°C...",
+            "InitialMarkDistance": "Mark-to-Intake Distance",
+            "MarkInstructions": "Using a permanent marker, mark the filament about 100mm from where it enters the extruder. This gives enough room to measure accurately with a ruler or calipers. Measure the exact distance, then enter that number below.",
+            "MeasureInstructions": "Extrusion has finished. Use the same ruler or calipers to measure the new distance from your mark to the extruder, then enter that number below.",
+            "RequestedDistance": "Requested Extrude Distance",
+            "Result": "Actual extruded: {actual}mm. Current rotation_distance: {current}. Proposed: {proposed}.",
+            "RunAgain": "Run Again",
+            "SaveSuccess": "rotation_distance updated and saved successfully.",
+            "Saving": "Writing to printer.cfg and restarting...",
+            "Start": "Start E-Steps Calibration",
+            "TargetTemp": "Target Temperature",
+            "Title": "Extruder E-Steps Calibration"
+        },
         "Pid": {
             "BedTitle": "Bed PID Autotune",
             "HotendTitle": "Hotend PID Autotune",

@@ -3,6 +3,7 @@
         <h1>{{ $t('Calibration.Title') }}</h1>
         <pid-calibration-panel heater="extruder" :title="$t('Calibration.Pid.HotendTitle')" :other-running="isAnyCalibrationRunning && !isHotendRunning" />
         <pid-calibration-panel heater="heater_bed" :title="$t('Calibration.Pid.BedTitle')" :other-running="isAnyCalibrationRunning && !isBedRunning" />
+        <e-steps-calibration-panel />
     </div>
 </template>
 

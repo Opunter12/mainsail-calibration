@@ -9,6 +9,17 @@ export const getDefaultState = (): CalibrationState => {
     return {
         pidHotend: { status: 'idle', targetTemp: 210, result: null, errorMessage: null, startedAt: null },
         pidBed: { status: 'idle', targetTemp: 60, result: null, errorMessage: null, startedAt: null },
+        eSteps: {
+            status: 'idle',
+            targetTemp: 210,
+            requestedDistance: 50,
+            feedRate: 60,
+            initialMarkDistance: null,
+            finalMarkDistance: null,
+            currentRotationDistance: null,
+            newRotationDistance: null,
+            errorMessage: null,
+        },
     }
 }
 
